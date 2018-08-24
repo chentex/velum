@@ -379,6 +379,9 @@ MinionPoller = {
 
     if ((MinionPoller.selectedMasters && MinionPoller.selectedMasters.indexOf(minion.id) != -1) || minion.role == "master") {
       checked =  "checked";
+    } 
+    else if ((MinionPoller.selectedNodes && MinionPoller.selectedNodes.indexOf(minion.id) != -1) || minion.role == "worker") {
+      checked =  "checked";
     } else {
       checked = '';
     }
